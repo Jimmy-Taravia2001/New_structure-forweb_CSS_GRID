@@ -1,0 +1,155 @@
+
+        body {
+            background-color: #333646;
+            margin: 0;  
+        }
+
+        nav {
+            background-color: #FFC25C;   
+        }
+
+        .main-nav {
+        background-color: #FFC25C;
+        list-style: none;
+        margin: 0;
+        font-size: 22px;
+        /*padding: 0px 0px 0px 0px;*/
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row; /*default direction is row that's why if we remove this there is minor effect*/
+        padding: 35px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px; 
+        }
+
+
+
+        a {
+        text-decoration: none;
+        color: #252734;
+        padding: 20px;   
+        }
+
+
+        li :hover {
+            background-color: #252734;
+            border-radius: 10px;
+            color: #FFC25C;  
+            transition: 0.8s;
+            padding: 17px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /*grid-auto-rows: minmax(200px, auto);*/
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+            margin: 10vh 20vw 10vh;
+            
+            background-color: coral;
+
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            
+        }
+
+        .wrapper > div {
+            background-color: #ddd;
+            padding: 1em;
+            font-size: 25px;
+            
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background-color: #ddd;
+            
+
+        }
+
+        .content {
+            
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: minmax(400px, auto);
+            background-color: coral;
+
+            
+            
+            
+
+        }
+
+        .c1 {
+            border-radius: 1em 0em 0em 1em;
+        }
+
+        .c2 {
+            border-radius: 0em 1em 1em 0em;
+        }
+
+        /* cards making from profile website*/
+        .zone {
+            
+            cursor:pointer;
+            color:#FFF;
+            font-size:2em;
+            border-radius:4px;
+            border:1px solid #bbb;
+            transition: all 0.3s linear;
+
+        ;
+            
+        }
+        
+        .zone:hover {
+            
+            /*box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;*/
+            box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;            
+        }
+        
+        
+        
+        .grid-wrapper{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+        
+        .box > img{
+            width: 100%;
+        }
+        
+        .box{
+            background-color: rgb(41, 38, 38);
+            padding: 120px;
+            margin: 10px;
+            /* we can use anmation here too like :  animation: forward;*/
+            animation: forward;
+            
+        }
+        
+        .box:hover{
+            transform: rotateX(40deg);
+            transition-delay: 20ms;
+           /* also useful :      transform: rotateZ(360deg);  transition-delay: 0.4s;*/
+        }
+        
+        
+        .blue{
+            background: coral; /* Old browsers */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,coral), color-stop(44%, orange), color-stop(100%, crimson)); /* Chrome,Safari4+ */
+        
+            /* background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); (FF3.6+) */
+            /* background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (Chrome10+,Safari5.1+) */
+            /* background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (Opera 11.10+) */
+            /* background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (IE10+) */
+            /* background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (W3C) */
+        }
+
+        .grid-wrapper {
+            margin-top: 3em;
+        }
