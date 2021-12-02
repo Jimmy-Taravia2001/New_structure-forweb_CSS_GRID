@@ -48,7 +48,7 @@
 
             margin: 10vh 20vw 10vh;
             
-            background-color: coral;
+            background-color: #ddd;
 
             justify-content: center;
             align-items: center;
@@ -63,11 +63,11 @@
             
         }
 
-        .wrapper > div:nth-child(odd) {
+        /* .wrapper > div:nth-child(odd) {
             background-color: #ddd;
             
 
-        }
+        } */
 
         .content {
             
@@ -89,6 +89,12 @@
 
         .c2 {
             border-radius: 0em 1em 1em 0em;
+        }
+
+        .jimmy{
+            height: auto;
+            width: 100%;
+            border-radius: 1em;
         }
 
         /* cards making from profile website*/
