@@ -4,41 +4,215 @@
             margin: 0;  
         }
 
-        nav {
-            background-color: #FFC25C;   
-        }
+        /*______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-        .main-nav {
+                /* ---------------------------navigation style starts here--------------------------- */
+
+                header{
+                    background-color: #FFC25C;
+                    text-align: center;
+                    position: fixed;
+                    width: 100%;
+                    z-index: 999;
+                }
+                /* .logo{
+                    margin: 0;
+                } */
+                nav{
+                    position: absolute;
+                    text-align: left;
+                    top: 100%;
+                    left: 0;
+                    background-color: #FFC25C;
+                    width: 100%;
+        
+                    /* display: none; */
+                    transform: scale(1,0); 
+                    transform-origin: top;
+                    transition: 400ms ease-in-out;
+        
+                }
+        
+                nav ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    
+                }
+                nav li{
+                    margin-bottom: 1em;
+                    margin-left: 1em;
+                }
+                nav a{
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.375rem;
+                    text-transform: uppercase;
+        
+                    opacity: 0;
+                    transition: opacity 150ms ease-in-out;
+                   
+        
+                }
+                nav a:hover{
+                    /* background-color: black;
+                    color: #FFC25C; */
+                    background-color: #252734;
+                    border-radius: 10px;
+                    color: #FFC25C;  
+                    transition: 0.8s;
+                    padding: 15px;
+        
+                        
+        
+                }
+        
+                .nav-toggle:checked ~ nav{
+                    /* display: block; */
+                    transform: scale(1,1);
+        
+                }
+                .nav-toggle:checked ~ nav a{
+                    opacity: 1;
+                    /* transition: opacity 250ms ease-in-out 250ms; */    /*_________________________________________________________________________________________________________________________________________________________________________START HERE ONE PROBLEM ABOUT CLICKING HOME IN MOBILE VIEW*/
+                }
+                .nav-toggle{
+                    display: none;
+                }
+                .nav-toggle-label{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-left: 1em;
+                    /* border: 1px solid black; */
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                .nav-toggle-label span,
+                .nav-toggle-label span::before,
+                .nav-toggle-label span::after{
+                    display: block;
+                    background: black;
+                    height: 2px;
+                    width: 2em;
+                    border-radius: 2px;
+                    position: relative;
+                }
+                .nav-toggle-label span::before,
+                .nav-toggle-label span::after{
+                    content: '';
+                    position: absolute;
+                }
+                .nav-toggle-label span::before{
+                    bottom: 6px;
+                }
+                .nav-toggle-label span::after{
+                    top: 6px;
+                }
+        
+                @media screen and (min-width: 800px){
+                    .nav-toggle-label{
+                        display: none;
+                    }
+                    header{
+                        display: grid;
+                        grid-template-columns: 1fr auto minmax(600px, 4fr) 1fr;
+                    }
+                    .logo{
+                        grid-column: 2 / 3;
+                    }
+                    nav{
+                        all: unset;
+                        grid-column: 3/4;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                    nav a{
+                        opacity: 1;
+                    }
+                    nav ul{
+                        display: flex;
+                        
+                    }
+                    nav li{
+                        margin-left: 3em;
+                        margin-bottom: 0;
+                        text-align: center;
+                        
+                    }
+                    nav a:hover{
+                        background-color: #252734;
+                        border-radius: 10px;
+                        color: #FFC25C;  
+                        transition: 0.8s;
+                        padding: 15px;
+                    }
+        
+        
+                }
+        
+        
+        
+        
+                /* ----------------------------------------navigation style ENDS here------------------------------------------ */
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+        /* nav {
+            background-color: #FFC25C;   
+        } */
+
+        /* .main-nav {
         background-color: #FFC25C;
         list-style: none;
         margin: 0;
         font-size: 22px;
         /*padding: 0px 0px 0px 0px;*/
-        display: flex;
+        /*display: flex;
         justify-content: flex-end;
         flex-direction: row; /*default direction is row that's why if we remove this there is minor effect*/
-        padding: 35px;
+        /*padding: 35px;
         flex-wrap: wrap;
         row-gap: 20px;
         column-gap: 10px; 
-        }
+        } */
 
 
 
-        a {
+        /* a {
         text-decoration: none;
         color: #252734;
         padding: 20px;   
-        }
+        } */
 
 
-        li :hover {
+        /* li :hover {
             background-color: #252734;
             border-radius: 10px;
             color: #FFC25C;  
             transition: 0.8s;
             padding: 17px;
-        }
+        } */
 
         .wrapper {
             display: grid;
