@@ -229,7 +229,7 @@
             padding: 1em;
 
             border-radius: 0.8em;
-            
+            transition: 1s ease;
     
         }    
 
@@ -237,6 +237,9 @@
             background-color: #ddd;
             padding: 1em;
             font-size: 25px;    
+        }
+        .wrapper:hover{
+            transform: rotateY(360deg);
         }
 
         
