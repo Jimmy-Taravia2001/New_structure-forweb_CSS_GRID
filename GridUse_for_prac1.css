@@ -229,7 +229,7 @@
             padding: 1em;
 
             border-radius: 0.8em;
-            transition: 1s;
+            
     
         }    
 
@@ -239,9 +239,7 @@
             font-size: 25px;    
         }
 
-        .wrapper:hover{
-            transform: rotateY(360deg);
-        }
+        
 
         /* .wrapper > div:nth-child(odd) {
             background-color: #ddd;
