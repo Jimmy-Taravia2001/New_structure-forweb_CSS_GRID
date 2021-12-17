@@ -229,6 +229,7 @@
             padding: 1em;
 
             border-radius: 0.8em;
+            transform: rotateY(360deg);
             transition: 1s ease;
     
         }    
@@ -238,9 +239,9 @@
             padding: 1em;
             font-size: 25px;    
         }
-        .wrapper:hover{
+        /* .wrapper:hover{
             transform: rotateY(360deg);
-        }
+        } */
 
         
 
