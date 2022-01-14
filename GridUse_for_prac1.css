@@ -472,5 +472,29 @@
             font-size: 1.5em;
         }
         /*----------------------footer section---ENDING---------------*/
+        
+        .social_list{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            font-size: 1.5em;
+            margin: 0.5em auto;
+            padding:0px;
+            width: 150px;
+        }  
+        .social_link{
+            color: black;
+        }
+        .social_item{
+            padding: 0 20px;
+        }
+        /*-----------hover effects for the social icons------------*/
+        .fa-brands{
+            transition: ease-in-out 0.2s;
+        }
+        .fa-brands:hover{
+            transform: scale(1.2);
+        }
+        /*-----------hover effects for the social icons ends------------*/
     
         
