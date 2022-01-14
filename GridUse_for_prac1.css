@@ -149,6 +149,13 @@
                         transition: 0.8s;
                         padding: 15px;
                     }
+                    .contact_info{
+                        font-size: 3em;
+                    }
+                    .self{
+                        font-size: 1.5em;
+                    }
+                    
         
         
                 }
@@ -229,8 +236,7 @@
             padding: 1em;
 
             border-radius: 0.8em;
-            transform: rotateY(360deg);
-            transition: 1s ease;
+            
     
         }    
 
@@ -382,7 +388,7 @@
             padding: 0.5em;
             margin: 0.5em;
             overflow: hidden;
-            background: var(--light-color)  ;
+            background: var(--light-color) ;
             max-width: 364px;
             
             transition: ease-in-out 0.3s;  /*----hover effects for the cards------*/
@@ -424,7 +430,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background:var(--background);
+            background: #FFC25C;
             border-radius: 10px;
             text-decoration: none;
             width: 150px;
@@ -455,8 +461,8 @@
         }
         .contact_info{
             font-family:"Fira Sans Extra Condensed", sans-serif;
-            font-size: 1.5em;
-            /* margin: 0 1em 1em 1em; */
+            /* font-size: 1.5em; */
+            margin: 0 1em 1em 1em; 
         }
         hr{
             max-width: 100%;
