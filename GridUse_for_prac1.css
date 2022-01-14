@@ -442,5 +442,29 @@
 
 
         /*------------------------------------------------------Certification ENDS HERE--------------------------------------------------------*/
+        /*----------------------footer section---------------*/
+
+        .footer_section{
+            grid-column: 2/span 10 ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #FFC25C;
+            padding:4em 0 1em 0;
+            text-align: center;
+        }
+        .contact_info{
+            font-family:"Fira Sans Extra Condensed", sans-serif;
+            font-size: 1.5em;
+            /* margin: 0 1em 1em 1em; */
+        }
+        hr{
+            max-width: 100%;
+        }
+        .self{
+            margin: 1em 0 0 0;
+            font-size: 1.5em;
+        }
+        /*----------------------footer section---ENDING---------------*/
     
         
