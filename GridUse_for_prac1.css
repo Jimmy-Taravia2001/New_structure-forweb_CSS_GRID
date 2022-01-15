@@ -496,5 +496,36 @@
             transform: scale(1.2);
         }
         /*-----------hover effects for the social icons ends------------*/
+
+        /*-----------------------------------------ANIMATION----------------------------------*/
+        @-webkit-keyframes svg-text-anim {
+            40% {
+               stroke-dashoffset: 0;
+               fill: transparent;
+             }
+             60% {
+               stroke-dashoffset: 0;
+               fill: #ffc25c;
+             }
+             100% {
+               stroke-dashoffset: 0;
+               fill: #ffc25c;
+             }
+             
+         }
+         /* Most browsers */
+         @keyframes svg-text-anim {
+            40% {
+               stroke-dashoffset: 0;
+               fill: transparent;
+             }
+             60% {
+               stroke-dashoffset: 0;
+               fill: black;
+             }
+             100% {
+               stroke-dashoffset: 0;
+               fill: #ffc25c;
+             }
     
         
