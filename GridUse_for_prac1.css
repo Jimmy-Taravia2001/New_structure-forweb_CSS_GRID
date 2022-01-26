@@ -264,7 +264,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-auto-rows: minmax(400px, auto);
-            background-color: coral;
+            background-color: #727896;
             justify-content: center;
 
             
@@ -325,7 +325,7 @@
         
         .box{
             /* background-color: rgb(41, 38, 38); */
-            background-color: #333646;
+            background-color: #434759;
             padding: 70px;
             margin: 10px;
             /* we can use anmation here too like :  animation: forward;*/
@@ -402,7 +402,7 @@
             transform: scale(1.06);
         }
         .certi_card{
-            background: #333646; /* for the certificate background #292626*/
+            background: #434759; /* for the certificate background #292626*/
         }
         .card_image{
             flex:0 0 250px;
@@ -498,7 +498,8 @@
         }
         .fa-brands:hover{
             transform: scale(1.2);
-            box-shadow: 0px 0px 15px 5px #00FFFF;
+            /* box-shadow: 0px 0px 15px 5px #727896; */
+            box-shadow: 0px 0px 40px 1.5px #fab443;
         }
         /*-----------hover effects for the social icons ends------------*/
 
