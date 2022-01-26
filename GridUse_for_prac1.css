@@ -30,14 +30,12 @@
                     transform: scale(1,0); 
                     transform-origin: top;
                     transition: 400ms ease-in-out;
-        
                 }
         
                 nav ul{
                     margin: 0;
                     padding: 0;
-                    list-style: none;
-                    
+                    list-style: none;  
                 }
                 nav li{
                     margin-bottom: 1em;
@@ -51,8 +49,6 @@
         
                     opacity: 0;
                     transition: opacity 150ms ease-in-out;
-                   
-        
                 }
                 nav a:hover{
                     /* background-color: black;
@@ -62,15 +58,11 @@
                     color: #FFC25C;  
                     transition: 0.8s;
                     padding: 15px;
-        
-                        
-        
                 }
         
                 .nav-toggle:checked ~ nav{
                     /* display: block; */
                     transform: scale(1,1);
-        
                 }
                 .nav-toggle:checked ~ nav a{
                     opacity: 1;
@@ -166,23 +158,6 @@
                 /* ----------------------------------------navigation style ENDS here------------------------------------------ */
 
 
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         /*______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
 
         /* nav {
@@ -237,8 +212,6 @@
 
             border-radius: 0.8em;
             box-shadow: 0px 0px 40px 1.5px #fab443;
-            
-    
         }    
 
         .wrapper > div {
@@ -250,35 +223,26 @@
             transform: rotateY(360deg);
         } */
 
-        
-
         /* .wrapper > div:nth-child(odd) {
             background-color: #ddd;
             
 
         } */
 
-        .content {
-            
-
+        .content{
             display: grid;
             grid-template-columns: 1fr;
             grid-auto-rows: minmax(400px, auto);
             background-color: #727896;
             justify-content: center;
-
-            
-            
-            
-
         }
 
-        .c1 {
+        .c1{
             border-radius: 1em 0em 0em 1em;
             padding: 0;
         }
 
-        .c2 {
+        .c2{
             border-radius: 0em 1em 1em 0em;
             color: #ddd;
             padding: 0;
@@ -298,19 +262,13 @@
             font-size:2em;
             border-radius:4px;
             border:1px solid #bbb;
-            transition: all 0.3s linear;
-
-        ;
-            
+            transition: all 0.3s linear;  
         }
         
-        .zone:hover {
-            
+        .zone:hover { 
             /*box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;*/
             box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;            
         }
-        
-        
         
         .grid-wrapper{
             display: grid;
@@ -329,8 +287,7 @@
             padding: 70px;
             margin: 10px;
             /* we can use anmation here too like :  animation: forward;*/
-            animation: forward;
-            
+            animation: forward;    
         }
         
         .box:hover{
@@ -338,7 +295,6 @@
             transition-delay: 20ms;
            /* also useful :      transform: rotateZ(360deg);  transition-delay: 0.4s;*/
         }
-        
         
         .blue{
             background: coral; /* Old browsers */
@@ -351,7 +307,7 @@
             /* background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (W3C) */
         }
 
-        .grid-wrapper {
+        .grid-wrapper{
             margin-top: 3em;
         }
 
@@ -397,7 +353,7 @@
             
             transition: ease-in-out 0.3s;  /*----hover effects for the cards------*/
             
-            }
+        }
         .card:hover{
             transform: scale(1.06);
         }
@@ -429,7 +385,6 @@
             margin-bottom:0.5em;
 
         }
-
         .link{
             display: flex;
             align-items: center;
@@ -505,6 +460,7 @@
 
         /*-----------------------------------------ANIMATION----------------------------------*/
         @-webkit-keyframes svg-text-anim {
+
             40% {
                stroke-dashoffset: 0;
                fill: transparent;
@@ -521,17 +477,15 @@
          }
          /* Most browsers */
          @keyframes svg-text-anim {
-            40% {
-               stroke-dashoffset: 0;
-               fill: transparent;
-             }
-             60% {
-               stroke-dashoffset: 0;
-               fill: black;
-             }
-             100% {
-               stroke-dashoffset: 0;
-               fill: #ffc25c;
-             }
-    
-        
+             40% {
+                 stroke-dashoffset: 0;
+                 fill: transparent;
+              }
+              60% {
+                  stroke-dashoffset: 0;
+                  fill: black;
+              }
+              100% {
+                  stroke-dashoffset: 0;
+                  fill: #ffc25c;
+              }
