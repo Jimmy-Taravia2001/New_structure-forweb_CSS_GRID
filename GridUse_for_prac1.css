@@ -229,20 +229,21 @@
 
             margin: 10vh 20vw 10vh;
             
-            background-color: #ddd;
+            background-color: #333646;
 
             justify-content: center;
             align-items: center;
             padding: 1em;
 
             border-radius: 0.8em;
+            box-shadow: 0px 1px 15px 13px #fab443;
             
     
         }    
 
         .wrapper > div {
-            background-color: #ddd;
-            padding: 1em;
+            background-color: #333646;
+            padding: 0.65em;
             font-size: 25px;    
         }
         /* .wrapper:hover{
@@ -274,10 +275,13 @@
 
         .c1 {
             border-radius: 1em 0em 0em 1em;
+            padding: 0;
         }
 
         .c2 {
             border-radius: 0em 1em 1em 0em;
+            color: #ddd;
+            padding: 0;
         }
 
         .jimmy{
@@ -483,7 +487,7 @@
             width: 150px;
         }  
         .social_link{
-            color: black;
+            color: #ddd;
         }
         .social_item{
             padding: 0 20px;
@@ -494,6 +498,7 @@
         }
         .fa-brands:hover{
             transform: scale(1.2);
+            box-shadow: 0px 0px 15px 5px #00FFFF;
         }
         /*-----------hover effects for the social icons ends------------*/
 
