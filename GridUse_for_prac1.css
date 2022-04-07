@@ -283,6 +283,8 @@
             border-radius: 0em 1em 1em 0em;
             color: #ddd;
             padding: 0;
+            font-family: 'Cabin';
+            letter-spacing: 1.5px;
             animation: fadeIn ease-in 1.5s;
         }
 
