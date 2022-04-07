@@ -16,6 +16,11 @@
                     z-index: 999;
                 }
 
+                .logo{
+                    font-family: 'Aladin'; /*date: 07/04/22*/
+                    letter-spacing: 2px; /*date: 07/04/22*/
+                }
+
                 nav{
                     position: absolute;
                     text-align: center;
