@@ -114,6 +114,16 @@
                         font-family: 'Aladin'; /*date: 07/04/22*/
                         letter-spacing: 2px; /*date: 07/04/22*/
                         font-size: 32px; /*date: 07/04/22*/
+                        cursor: pointer; 
+                        font-weight: bold;
+                    }
+                    .logo:hover{
+                        animation: fadeIn ease-in 0.57s;
+                        animation-iteration-count: 2;
+                    }
+                    @keyframes fadeIn {
+                        0% {opacity:0;}
+                        100% {opacity:1;}
                     }
                     nav{
                         all: unset;
