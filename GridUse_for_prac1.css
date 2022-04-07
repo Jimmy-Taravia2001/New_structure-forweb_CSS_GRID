@@ -1,6 +1,6 @@
 
         body {
-            background-color: #333646;
+            background-color: #121221;
             margin: 0;  
         }
 
@@ -9,7 +9,7 @@
                 /* ---------------------------navigation style starts here--------------------------- */
 
                 header{
-                    background-color: #FFC25C;
+                    background-color: black;
                     text-align: center;
                     position: fixed;
                     width: 100%;
@@ -19,6 +19,7 @@
                 .logo{
                     font-family: 'Aladin'; /*date: 07/04/22*/
                     letter-spacing: 2px; /*date: 07/04/22*/
+                    color: white;
                 }
 
                 nav{
@@ -26,42 +27,59 @@
                     text-align: center;
                     top: 100%;
                     left: 0;
-                    background-color: #FFC25C;
+                    background-color: black;
                     width: 100%;
                     /* display: none; */
                     transform: scale(1,0); 
                     transform-origin: top;
                     transition: 400ms ease-in-out;
-                    font-family: 'Allerta Stencil'; /*date: 07/04/22*/
+                    font-family: 'Aladin'; /*date: 07/04/22*/
                 }
         
                 nav ul{
                     margin: 0;
                     padding: 0;
                     list-style: none;  
-                    font-family: 'Allerta Stencil'; /*date: 07/04/22*/
+                    font-family: 'Aladin'; /*date: 07/04/22*/
                 }
                 nav li{
                     margin-bottom: 1em;
                     margin-left: 1em;
                 }
                 nav a{
-                    color: black;
+                    color: white;
                     text-decoration: none;
                     font-size: 1.375rem;
                     text-transform: uppercase;
                     opacity: 0;
                     transition: opacity 150ms ease-in-out;
+
+                    cursor: pointer;
                 }
                 nav a:hover{
                     /* background-color: black;
                     color: #FFC25C; */
-                    background-color: #252734;
+
+                    /* background-color: #252734;
                     border-radius: 10px;
                     color: #FFC25C;  
                     transition: 0.8s;
-                    padding: 15px;
+                    padding: 15px; */
+
+                    cursor: pointer;
+
+                    animation: fadeIn ease-in 0.57s;
+                    animation-iteration-count: 2;
+                    color: #727896;
+
+
                 }
+                @keyframes fadeIn {
+                    0% {opacity:0;}
+                    100% {opacity:1;}
+                }
+
+
         
                 .nav-toggle:checked ~ nav{
                     /* display: block; */
@@ -150,11 +168,14 @@
                         text-align: center;    
                     }
                     nav a:hover{
-                        background-color: #252734;
+                        /* background-color: #252734;
                         border-radius: 10px;
                         color: #FFC25C;  
                         transition: 0.8s;
-                        padding: 15px;
+                        padding: 15px; */
+
+                        cursor: pointer;
+                        font-weight: bold;
                     }
                     .contact_info{
                         font-size: 3em;
@@ -208,16 +229,17 @@
             /*grid-auto-rows: minmax(200px, auto);*/
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             margin: 10vh 20vw 10vh;
-            background-color: #333646;
+            background-color: #121221;
             justify-content: center;
             align-items: center;
             padding: 1em;
             border-radius: 0.8em;
-            box-shadow: 0px 0px 40px 1.5px #fab443;
+
+            /* box-shadow: 0px 0px 40px 1.5px #fab443; */
         }    
 
         .wrapper > div {
-            background-color: #333646;
+            background-color: #121221;
             padding: 0.65em;
             font-size: 25px;    
         }
@@ -233,7 +255,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-auto-rows: minmax(400px, auto);
-            background-color: #727896;
+            background-color: #121221;
             justify-content: center;
         }
 
@@ -241,11 +263,25 @@
             border-radius: 1em 0em 0em 1em;
             padding: 0;
         }
+        .c1>.jimmy{
+            width: 100%;
+            height: 100%;
+            animation: zoom-in 0.8s ease-out;
+        }
+        @keyframes zoom-in {
+            0% {
+            transform: scale(0, 0);
+            }
+            100% {
+            transform: scale(1, 1);
+            }
+        }
 
         .c2{
             border-radius: 0em 1em 1em 0em;
             color: #ddd;
             padding: 0;
+            animation: fadeIn ease-in 1.5s;
         }
 
         .jimmy{
@@ -267,7 +303,8 @@
         
         .zone:hover { 
             /*box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;*/
-            box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;            
+
+            /* box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;             */
         }
         
         .grid-wrapper{
@@ -283,7 +320,7 @@
         
         .box{
             /* background-color: rgb(41, 38, 38); */
-            background-color: #434759;
+            background-color: white;
             padding: 70px;
             margin: 10px;
             /* we can use anmation here too like :  animation: forward;*/
@@ -297,8 +334,11 @@
         }
         
         .blue{
-            background: coral; /* Old browsers */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,coral), color-stop(44%, orange), color-stop(100%, crimson)); /* Chrome,Safari4+ */
+            background: #121221; /* Old browsers */
+            /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,coral), color-stop(44%, orange), color-stop(100%, crimson));  */
+            
+            /* Chrome,Safari4+ */
+            
             /* background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); (FF3.6+) */
             /* background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (Chrome10+,Safari5.1+) */
             /* background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (Opera 11.10+) */
