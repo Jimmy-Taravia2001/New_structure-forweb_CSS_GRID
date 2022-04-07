@@ -112,6 +112,8 @@
                     .logo{
                         grid-column: 2 / 3;
                         font-family: 'Aladin'; /*date: 07/04/22*/
+                        letter-spacing: 2px; /*date: 07/04/22*/
+                        font-size: 32px; /*date: 07/04/22*/
                     }
                     nav{
                         all: unset;
