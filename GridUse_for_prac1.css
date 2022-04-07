@@ -288,6 +288,7 @@
             animation: fadeIn ease-in 1.5s;
         }
 
+
         .jimmy{
             height: auto;
             width: 100%;
@@ -332,8 +333,9 @@
         }
         
         .box:hover{
-            transform: rotateX(40deg);
+            /* transform: rotateX(40deg); */
             transition-delay: 20ms;
+
            /* also useful :      transform: rotateZ(360deg);  transition-delay: 0.4s;*/
         }
         
