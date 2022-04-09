@@ -360,11 +360,14 @@
         .certificate{
             grid-column: 2/span 10;
             grid-row: 3;
+            background-color: white;
         }
         .certificatetitle{
             text-align: center;
             font-size: 3em;
             margin-bottom: 1.5em;
+            color: black;
+            background-color: white;
         }
         .certi_title{
             color: white;
@@ -393,7 +396,7 @@
             padding: 0.5em;
             margin: 0.5em;
             overflow: hidden;
-            background: var(--light-color) ;
+            
             max-width: 364px; 
             transition: ease-in-out 0.3s;  /*----hover effects for the cards------*/
             
@@ -402,7 +405,10 @@
             transform: scale(1.06);
         }
         .certi_card{
-            background: #434759; /* for the certificate background #292626*/
+            /* background: #434759; for the certificate background #292626 */
+
+            background: white;
+            margin: 2em;
         }
         .card_image{
             flex:0 0 250px;
@@ -410,7 +416,26 @@
             background-repeat: no-repeat;
             background-position:left;
             border-radius: 10px;
-            margin: 15px;  
+            margin: 25px; 
+            
+            animation: fadeAndScale 0.9s;
+        }
+        @keyframes fadeAndScale {
+            0%{
+                transform: scale(0, 0);
+                opacity: 0;
+                transform: translateY(150px);
+                }
+                50%{
+                    opacity: 0.5;
+                }
+                100% {
+                transform: scale(1, 1);
+                opacity: 1;
+                transform: translateY(0);
+                
+                }
+            
         }
 
         .card_content{
@@ -421,9 +446,11 @@
         }
 
         .card_title{
-        font-size: 1.2em;
+        font-size: 1.7em;
         font-weight: bold;
+        font-family: 'Allerta Stencil';
         margin-bottom:0.5em;
+        color: black;
         }
 
         .card_details{
@@ -435,13 +462,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #FFC25C;
+            background: black;
             border-radius: 10px;
             text-decoration: none;
             width: 150px;
             margin-top: auto;
             flex:0 0 40px;
-            color: black;
+            color: white;
+            font-family: 'Aladin';
         }
 
         .certi_link{
