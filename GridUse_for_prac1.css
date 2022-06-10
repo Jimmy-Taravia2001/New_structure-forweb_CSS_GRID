@@ -300,6 +300,9 @@
             letter-spacing: 1.5px;
             animation: fadeIn ease-in 1.5s;
         }
+        .c2>h2{
+            text-align: center;
+        }
         /* .c2>h2{
             text-decoration: underline;
             
