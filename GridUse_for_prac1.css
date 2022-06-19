@@ -303,6 +303,9 @@
         .c2>h2{
             text-align: center;
         }
+        .c2>div{
+            text-align: center;
+        }
         /* .c2>h2{
             text-decoration: underline;
             
