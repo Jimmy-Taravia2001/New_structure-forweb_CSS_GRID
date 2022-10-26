@@ -129,6 +129,9 @@
                 }
         
                 @media screen and (min-width: 800px){
+                    .svg-holder{
+                        padding: 0em 7em 0em 7em !important;
+                    }
                     .nav-toggle-label{
                         display: none;
                     }
