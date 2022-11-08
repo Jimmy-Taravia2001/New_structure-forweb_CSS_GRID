@@ -305,15 +305,16 @@
         }
         .c2>h2{
             text-align: center;
-            font-family: 'Allerta Stencil';
-            font-size: 41px;
+            font-family: 'Aladin';
+            font-size: 91px;
+            margin: 0;
             color: #87BFFF;
         }
         .c2>div{
             text-align: left;
             font-size: 22px;
             font-family: Sora, sans-serif;
-            color: #737D8E;
+            color: white;
             letter-spacing: 1.5px;
         }
         /* .c2>h2{
